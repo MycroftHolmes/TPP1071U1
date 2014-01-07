@@ -3314,7 +3314,7 @@ function g2pic25()
   <div data-role="content">
   	<ul data-role="listview" data-theme="b">
     	<li class="listdivider" data-role="divider" data-theme="d">Multi-player Games</li>
-  		<li><a href="#page51">Word Finder</a></li>
+  		<li><a>Word Finder (coming soon)</a></li>
     	<li><a href="#page53">Password</a></li>
         <li class="listdivider" data-role="divider" data-theme="d">One-Player Games</li>
        <li><a href="#page55">Scrambler</a></li>
@@ -3551,17 +3551,20 @@ function g2pic25()
     <h1>Password</h1>
   </div>
   <div data-role="content">
+  	<br/>
     <p align="center">Rules:</p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Password is for two players.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;One player gives hints and the other guesses the word.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;Guess as many words as you can in one minute.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;Switch roles after each round.</p>
+    <div data-role="controlgroup" justify="left">
+   	<p>Password is for two players.</p>
+    <p>One player gives hints and the other guesses the word.</p>
+    <p>Guess as many words as you can in one minute.</p>
+    <p>Switch roles after each round.</p>
+    </div>
    
   </div>
   
   <div>
-     <input id="g2input" placeholder="Type your partner's name here and press 'Enter'"></input>
-     <button onClick="g2name()" data-inline=true data-theme="a" data-icon="check">Enter</button>
+     <input id="g2input" placeholder="Type your partner's name here and press 'Enter Name'"></input>
+     <button onClick="g2name()" data-inline=true data-theme="a" data-icon="check">Enter Name</button>
   </div>
   
   <a href="#page54" onClick="g2Start();" data-inline="true" data-role="button" data-theme="b">Start Game</a>
@@ -3752,15 +3755,17 @@ function g2pic25()
   <div data-role="content">
     <p align="center">&nbsp;&nbsp;Rules:
     </p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Scrambler is a one-player game.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;The letters in each word are scrambled.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;Type the word in the text box and touch <em>enter</em>.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;Touch the hint buttons if you need help</p>
-    <p align="justify">&bull;&nbsp;&nbsp;You receive fewer points when you get help.</p>
+    <div data-role="controlgroup" align="left">
+   	<p>Scrambler is a one-player game.</p>
+    <p>The letters in each word are scrambled.</p>
+    <p>Type the word in the text box and touch 'Enter'.</p>
+    <p>Touch the hint buttons if you need help</p>
+    <p>You receive fewer points when you get help.</p>
+    </div>
 
-  	<ul data-role="listview" data-theme="b">
-	  <li><a href="#page56" onClick="randomStart();">Start Game</a></li>
-   	</ul>
+  	<br/>
+  	<br/>
+	  <a href="#page56" onClick="randomStart();" data-role="button" data-inline="true" data-theme="b">Start Game</a>
   </div>
   <div data-role="footer" class="ui-bar" data-position="fixed">
     <div class="ui-grid-b">
@@ -3851,15 +3856,18 @@ function g2pic25()
     <h1>Vowel Trouble</h1>
   </div>
   <div data-role="content">
-    <p align="center">&nbsp;&nbsp;Rules:
+  	<br/>
+    <p align="center">Rules:
     </p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Vowel Trouble is a one-player game.</p>
-    <p align="justify">The vowels of each word are missing.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;Spell the word and press 'Enter'</p>
-    <p align="justify">&bull;&nbsp;&nbsp;You receive 10 points if you spell the word correctly without help.</p>
-    <p align="justify">&bull;&nbsp;&nbsp; If you need help, touch the help button to see the word for a second.</p>
-    <p align="justify">&bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp; You receive fewer points each time you get help.</p>
-  
+    <div data-role="controlgroup" align="left">
+   	<p>Vowel Trouble is a one-player game.</p>
+    <p>The vowels of each word are missing.</p>
+    <p>Spell the word and press 'Enter'.</p>
+    <p>You receive 10 points if you spell the word correctly without help.</p>
+    <p>If you need help, touch the help button to see the word for a second.</p>
+    <p><em>Remember:</em>&nbsp; You receive fewer points each time you get help.</p>
+    </div>
+  	<br/>
 	  <a href="#page58" onClick="randomStart();" data-role="button" data-inline="true" data-theme="b">Start Game</a></li>
    
   </div>
@@ -3955,6 +3963,7 @@ function g2pic25()
     <p>You lose points if you touch the wrong word.</p>
     </div>
     <br/>
+    <br/>
   	<ul data-role="listview" data-theme="b">
 	  <a href="#page60" onClick="randPic();" data-role="button" data-theme="b" data-inline="true">Start Game</a>
    	</ul>
@@ -4002,23 +4011,23 @@ function g2pic25()
   	       </div>
     </div>
     
-    <div class="ui-grid-b" data-role="controlgroup">
+    <div class="ui-grid-a" data-role="controlgroup">
      	<div class="ui-block-a">
      		<a href="#" onClick="g5lex0()" id="g5lex0" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
        		<a href="#" onClick="g5lex1()" id="g5lex1" data-role="button" data-theme="b"></a>
      	</div>
-     	<div class="ui-block-c">
+     	<div class="ui-block-a">
        		<a href="#" onClick="g5lex2()" id="g5lex2" data-role="button" data-theme="b"></a>
      	</div>
-      	<div class="ui-block-a">
+      	<div class="ui-block-b">
       		<a href="#" onClick="g5lex3()" id="g5lex3" data-role="button" data-theme="b"></a>
     	 </div>
-     	<div class="ui-block-b">
+     	<div class="ui-block-a">
        		<a href="#" onClick="g5lex4()" id="g5lex4" data-role="button" data-theme="b"></a>
     	</div>
-     	<div class="ui-block-c">
+     	<div class="ui-block-b">
        		<a href="#" onClick="g5lex5()" id="g5lex5" data-role="button" data-theme="b"></a>
      	</div>	
      	<div class="ui-block-a">
@@ -4027,16 +4036,16 @@ function g2pic25()
      	<div class="ui-block-b">
        		<a href="#" onClick="g5lex7()" id="g5lex7" data-role="button" data-theme="b"></a>
      	</div>
-     	<div class="ui-block-c">
+     	<div class="ui-block-a">
        		<a href="#" onClick="g5lex8()" id="g5lex8" data-role="button" data-theme="b"></a>
      	</div>
-      	<div class="ui-block-a">
+      	<div class="ui-block-b">
       		<a href="#" onClick="g5lex9()" id="g5lex9" data-role="button" data-theme="b"></a>
     	 </div>
-     	<div class="ui-block-b">
+     	<div class="ui-block-a">
        		<a href="#" onClick="g5lex10()" id="g5lex10" data-role="button" data-theme="b"></a>
     	</div>
-     	<div class="ui-block-c">
+     	<div class="ui-block-b">
        		<a href="#" onClick="g5lex11()" id="g5lex11" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
@@ -4045,10 +4054,10 @@ function g2pic25()
      	<div class="ui-block-b">
        		<a href="#" onClick="g5lex13()" id="g5lex13" data-role="button" data-theme="b"></a>
      	</div>
-     	<div class="ui-block-c">
+     	<div class="ui-block-a">
        		<a href="#" onClick="g5lex14()" id="g5lex14" data-role="button" data-theme="b"></a>
      	</div>
-      	<div class="ui-block-a">
+      	<div class="ui-block-b">
       		<a href="#" onClick="g5lex15()" id="g5lex15" data-role="button" data-theme="b"></a>
     	 </div>    	
    </div>
