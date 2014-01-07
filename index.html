@@ -149,9 +149,7 @@ var Hint = new Array ();
 	Hint [61] = "syn. 'wall'"; //Fence 2
 	Hint [62] = "Fence Arabic Trans."; //Fence 3
 	
-</script>
 
-<script>
 function please()
 	{
 	document.getElementById("lex0").innerHTML = newWord[0];	
@@ -373,9 +371,7 @@ function please()
 	document.getElementById("hint25b").innerHTML = arabic[25];
 	
 	}
-</script>
 
-<script>
 
 function G1input1()
 
@@ -548,9 +544,7 @@ function G1input1()
 	}
 	
 	}
-</script>
 
-<script>
 function G1reset()//resets the word and hint lists in Game 1.
 	{
 	
@@ -600,9 +594,6 @@ function G1reset()//resets the word and hint lists in Game 1.
 	
 	}
 
-</script>
-
-<script>
 
 function randomStart()//this generates 5 random words for the student in Game One
 
@@ -616,9 +607,6 @@ for (var i=0; i<5; i++)	{
 	
 	}
 
-</script>
-
-<script>
 
 function randomStart2()//This generates 5 random hints in Game 1.
 	{
@@ -632,9 +620,6 @@ for (var j=0; j<5; j++)    {
 	}
 
 	}
-</script>
-
-<script>
 
 function scramble()
 	//Word Game 3; This function generates and scrambles a new word.
@@ -660,43 +645,34 @@ for (var i = 0; i < wordLength; i++) {
 	
 	}
 	}
-</script>
-
-<script>
 
 function G3hint1()
 	{
 	
 	document.getElementById("G3H1").innerHTML = sent[g3word];
 	document.getElementById("G3H1").style.textAlign = "center";
+	document.getElementById("G3H1").style.color = "black";
 	g3counter++;
 	
 	}
-</script>
-
-<script>
 
 function G3hint2()
 	{
 	
 	document.getElementById("G3H2").innerHTML = def[g3word];
+	document.getElementById("G3H2").style.color = "black";
 	g3counter++;
 	
 	}
-</script>
-
-<script>
 
 function G3hint3()
 	{
 	
 	document.getElementById("G3H3").innerHTML = arabic[g3word];
+	document.getElementById("G3H3").style.color = "black";
 	g3counter++;
 	
 	}
-</script>
-
-<script>
 
 function G3hint4()//Word Scramble Hint #4
 	{
@@ -710,12 +686,11 @@ for (var i = 0; i < n ; i++) {
 	
 	filler = filler + " _ ";
 	document.getElementById("G3H4").innerHTML = first + filler + last;
+	document.getElementById("G3H4").style.color = "black";
     }
 	g3counter++;
 	}
-</script>
 
-<script>
 
 function G3scoring()
 
@@ -756,9 +731,6 @@ else if (a == newWord[randomNumber] && g3counter ==4) {
 }
 	}
 	
-</script>
-
-<script>
 
 function vowelless()
 	{
@@ -776,9 +748,6 @@ function vowelless()
 	
 	}
 	
-</script>
-
-<script>
 
 function vowelhelp()
 	{
@@ -794,9 +763,6 @@ function vowelhelp()
 	g4counter++;
 
 	}
-</script>
-
-<script>
 
 function G4scoring()
 	
@@ -862,9 +828,6 @@ else if (a == newWord[vowelword] && g4counter == 3) {
 
 	}
 
-</script>
-
-<script>
 
 function randPic()
 	{
@@ -909,10 +872,6 @@ function randPic()
 
 	}
 	
-</script>
-
-<script>
-
 function randPic2()
 	{
 
@@ -952,10 +911,6 @@ function randPic2()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex0()
 	{
 
@@ -993,10 +948,6 @@ function g5lex0()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex1()
 	{
 
@@ -1033,10 +984,6 @@ function g5lex1()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex2()
 	{
 
@@ -1073,10 +1020,6 @@ function g5lex2()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex3()
 	{
 
@@ -1113,10 +1056,6 @@ function g5lex3()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex4()
 	{
 
@@ -1153,10 +1092,6 @@ function g5lex4()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex5()
 	{
 
@@ -1193,10 +1128,6 @@ function g5lex5()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex6()
 	{
 
@@ -1232,10 +1163,6 @@ function g5lex6()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex7()
 	{
 
@@ -1272,10 +1199,6 @@ function g5lex7()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex8()
 	{
 
@@ -1312,10 +1235,6 @@ function g5lex8()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex9()
 	{
 
@@ -1352,10 +1271,6 @@ function g5lex9()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex10()
 	{
 
@@ -1392,10 +1307,6 @@ function g5lex10()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex11()
 	{
 
@@ -1432,10 +1343,6 @@ function g5lex11()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex12()
 	{
 
@@ -1472,10 +1379,6 @@ function g5lex12()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex13()
 	{
 
@@ -1512,10 +1415,6 @@ function g5lex13()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex14()
 	{
 
@@ -1551,10 +1450,6 @@ function g5lex14()
 		}
 
 	}
-	
-</script>
-
-<script>
 
 function g5lex15()
 	{
@@ -1592,10 +1487,6 @@ function g5lex15()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex16()
 	{
 
@@ -1631,10 +1522,6 @@ function g5lex16()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex17()
 	{
 
@@ -1671,10 +1558,6 @@ function g5lex17()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex18()
 	{
 
@@ -1711,10 +1594,6 @@ function g5lex18()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex19()
 	{
 
@@ -1751,10 +1630,6 @@ function g5lex19()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex20()
 	{
 
@@ -1791,10 +1666,6 @@ function g5lex20()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex21()
 	{
 
@@ -1831,10 +1702,6 @@ function g5lex21()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex22()
 	{
 
@@ -1871,10 +1738,6 @@ function g5lex22()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex23()
 	{
 
@@ -1910,10 +1773,6 @@ function g5lex23()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex24()
 	{
 
@@ -1950,10 +1809,6 @@ function g5lex24()
 
 	}
 	
-</script>
-
-<script>
-
 function g5lex25()
 	{
 
@@ -1990,10 +1845,6 @@ function g5lex25()
 
 	}
 	
-</script>
-
-<script>
-
 function g2startstop()
 
 	{
@@ -2005,21 +1856,12 @@ function g2startstop()
 	
 	}
 
-</script>
-
-
-<script>
-
 function g2hint1()
 	{
 	
 	document.getElementById("g2hint1").innerHTML = def[g2word];
 	
 	}
-
-</script>
-
-<script>
 
 function g2hint2()
 	{
@@ -2028,10 +1870,6 @@ function g2hint2()
 	
 	}
 
-</script>
-
-<script>
-
 function g2hint3()
 	{
 	var str = newWord[g2word];
@@ -2039,10 +1877,6 @@ function g2hint3()
 	document.getElementById("g2hint3").innerHTML = "It starts with the letter '" + first + "'.";
 	
 	}
-
-</script>
-
-<script>
 
 function g2name()
 
@@ -2053,10 +1887,6 @@ function g2name()
 	document.getElementById("g2playername").innerHTML = g2name;
 	
 	}
-
-</script>
-
-<script>
 
 function g2correct()
 
@@ -2074,10 +1904,6 @@ function g2correct()
 	
 	}
 
-</script>
-
-<script>
-
 function g2pass()
 
 	{
@@ -2090,10 +1916,6 @@ function g2pass()
 	document.getElementById("g2hint3").innerHTML = "Hint 3";
 	
 	}
-
-</script>
-
-<script>
 
 function g2pic0()
 
@@ -2303,7 +2125,6 @@ function g2pic25()
 	
 	}
 
-</script>
 
 </script>
 
@@ -3731,11 +3552,11 @@ function g2pic25()
   </div>
   <div data-role="content">
     <p align="center">Rules:</p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Password is for two players.<br/><br/>
-      &bull;&nbsp;&nbsp;One player gives hints and the other guesses the word.<br/><br/>
-      &bull;&nbsp;&nbsp;Guess as many words as you can in one minute.<br/><br/>
-      &bull;&nbsp;&nbsp;Switch roles after each round.<br/><br/>
-    </p>
+   	<p align="justify">&bull;&nbsp;&nbsp;Password is for two players.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;One player gives hints and the other guesses the word.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;Guess as many words as you can in one minute.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;Switch roles after each round.</p>
+   
   </div>
   
   <div>
@@ -3929,16 +3750,14 @@ function g2pic25()
     <h1>Scrambler</h1>
   </div>
   <div data-role="content">
-    <p align="center">&nbsp;&nbsp;Scrambler Rules:
+    <p align="center">&nbsp;&nbsp;Rules:
     </p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Scrambler is a one-player game.<br/><br/>
-      &bull;&nbsp;&nbsp;The letters in each word are scrambled.<br/><br/>
-      &bull;&nbsp;&nbsp;You must enter the correct spelling of the word <br/>&nbsp;&nbsp;&nbsp;&nbsp;in the box.<br/>      <br/>
-      &bull;&nbsp;&nbsp;<em>hraic</em> is the word <em>chair</em>, for instance.<br/><br/>
-      &bull;&nbsp;&nbsp;Type the word in the text box and touch <em>enter</em>.<br/>      <br/>
-      &bull;&nbsp;&nbsp;Touch the hint buttons if you need help<br/><br/>
-      &bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp;Using hints decreases the number of<br/>&nbsp;&nbsp;&nbsp;points you receive.<br/><br/>
-    </p>
+   	<p align="justify">&bull;&nbsp;&nbsp;Scrambler is a one-player game.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;The letters in each word are scrambled.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;Type the word in the text box and touch <em>enter</em>.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;Touch the hint buttons if you need help</p>
+    <p align="justify">&bull;&nbsp;&nbsp;You receive fewer points when you get help.</p>
+
   	<ul data-role="listview" data-theme="b">
 	  <li><a href="#page56" onClick="randomStart();">Start Game</a></li>
    	</ul>
@@ -3979,9 +3798,9 @@ function g2pic25()
     <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
     	     <button onClick="scramble();" data-theme="b" data-inline=true>new word</button>
-    	     <table width="225" height="95" border="1" cellpadding="0" data-inline=true>
+    	     <table width="250" height="95" border="1" cellpadding="0" data-inline=true>
     	       <tr>
-    	         <th width="225" bgcolor="#FFFFFF" id="scrambled" style="font-size: xx-large; color: #000;" scope="col"></th>
+    	         <th width="250" bgcolor="#FFFFFF" id="scrambled" style="font-size: xx-large; color: #000;" scope="col"></th>
    	           </tr>
     	       </table>
   	     </div>
@@ -4034,13 +3853,12 @@ function g2pic25()
   <div data-role="content">
     <p align="center">&nbsp;&nbsp;Rules:
     </p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Vowel Trouble is a one-player game.<br/><br/>
-      &bull;&nbsp;&nbsp;The vowels of each word are missing.<br/><br/>
-      &bull;&nbsp;&nbsp;Spell the word and press 'Enter'<br/><br/>
-      &bull;&nbsp;&nbsp;You receive 10 points if you spell the word correctly without help.<br/>      <br/>
-      &bull;&nbsp;&nbsp; If you need help, touch the help button to see the word for a second.<br/><br/>
-      &bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp; You receive fewer points each time you get help.<br/><br/>
-    </p>
+   	<p align="justify">&bull;&nbsp;&nbsp;Vowel Trouble is a one-player game.</p>
+    <p align="justify">The vowels of each word are missing.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;Spell the word and press 'Enter'</p>
+    <p align="justify">&bull;&nbsp;&nbsp;You receive 10 points if you spell the word correctly without help.</p>
+    <p align="justify">&bull;&nbsp;&nbsp; If you need help, touch the help button to see the word for a second.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp; You receive fewer points each time you get help.</p>
   
 	  <a href="#page58" onClick="randomStart();" data-role="button" data-inline="true" data-theme="b">Start Game</a></li>
    
@@ -4128,11 +3946,11 @@ function g2pic25()
   <div data-role="content">
     <p align="center">&nbsp;&nbsp;Rules:
     </p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Match-It! is a one-player game.<br/><br/>
-      &bull;&nbsp;&nbsp;Touch the word that goes with the picture.<br/><br/>
-      &bull;&nbsp;&nbsp;You receive points for correct answers.<br/><br/>
-      &bull;&nbsp;&nbsp;You lose points when you touch the wrong word.<br/>      <br/>
-    </p>
+   	<p align="justify">&bull;&nbsp;&nbsp;Match-It! is a one-player game.</p>
+    <p align="justify">&bull;&nbsp;&nbsp;Touch the word that goes with the picture.</p>
+	<p align="justify">&bull;&nbsp;&nbsp;You receive points for correct answers.</p>
+    <p align="justify"> &bull;&nbsp;&nbsp;You lose points if you touch the wrong word.</p>
+    
   	<ul data-role="listview" data-theme="b">
 	  <a href="#page60" onClick="randPic();" data-role="button" data-theme="b" data-inline="true">Start Game</a>
    	</ul>

@@ -1,5 +1,5 @@
 #page56 {
-	background: url('scramback.png')	
+	background: url('letters.jpg')	
 }
 
 #page58 {
@@ -68,6 +68,12 @@
 	 
 	font-size:10px;	 
 	 
+ }
+ 
+ .pic {
+ 	
+ 	height: 500px;
+ 
  }
 
 
