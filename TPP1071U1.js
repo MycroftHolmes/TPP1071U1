@@ -88,6 +88,7 @@ var pos = new Array ();
 	arabic [12] = "";
 	arabic [13] = "";
 	arabic [14] = "";
+	arabic [15] = "";
 	
 	var sent = new Array();	
 	sent [0] = "If there is a fire, call the Fire __________!";
