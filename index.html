@@ -2125,6 +2125,13 @@ function g2pic25()
 	
 	}
 
+$(document).ready(function(){
+	$('#img0').toggle(function()
+		{$(this).animate({width: "500px"}, 'slow');},
+		function()
+		{$(this).animate({width: "200px"}, 'slow');
+		});
+});
 
 </script>
 
@@ -2232,7 +2239,7 @@ function g2pic25()
     <br/>
 	</div>
     <div align="center">
-      <img src="0.jpg" alt="pic1" class="pic"/>
+      <img src="0.jpg" id="img0" alt="pic1" class="pic"/>
       <br/>
       <br/>
       <span id="hint0"></span>
