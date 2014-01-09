@@ -75,6 +75,7 @@ a:active {
 	var randomNumber = 0;
 	var word = "";
 	var g3score = 0;
+	var g3unscrambled = "";
 	var vowelword = "";
 	var g4score = 0;
 	var g4highscore = 0;
@@ -630,6 +631,7 @@ function scramble()
 	//Word Game 3; This function generates and scrambles a new word.
 	{
 	randomNumber = Math.floor((Math.random() * newWord.length));
+	g3unscrambled = newWord[randomNumber];
 	word = newWord[randomNumber];
 	var wordLength = word.length;
 	var scramble = "";
@@ -642,6 +644,7 @@ for (var i = 0; i < wordLength; i++) {
 	g3word = randomNumber;
 
 	document.getElementById("scrambled").innerHTML = scramble;
+	document.getElementById("scrambled").style.color = "black";
 	document.getElementById("G3H1").innerHTML = "";
 	document.getElementById("G3H2").innerHTML = "";
 	document.getElementById("G3H3").innerHTML = "";
@@ -656,7 +659,7 @@ function G3hint1()
 	
 	document.getElementById("G3H1").innerHTML = sent[g3word];
 	document.getElementById("G3H1").style.textAlign = "center";
-	document.getElementById("G3H1").style.color = "black";
+	document.getElementById("G3H1").style.color = "white";
 	g3counter++;
 	
 	}
@@ -665,7 +668,7 @@ function G3hint2()
 	{
 	
 	document.getElementById("G3H2").innerHTML = def[g3word];
-	document.getElementById("G3H2").style.color = "black";
+	document.getElementById("G3H2").style.color = "white";
 	g3counter++;
 	
 	}
@@ -674,7 +677,7 @@ function G3hint3()
 	{
 	
 	document.getElementById("G3H3").innerHTML = arabic[g3word];
-	document.getElementById("G3H3").style.color = "black";
+	document.getElementById("G3H3").style.color = "white";
 	g3counter++;
 	
 	}
@@ -691,7 +694,7 @@ for (var i = 0; i < n ; i++) {
 	
 	filler = filler + " _ ";
 	document.getElementById("G3H4").innerHTML = first + filler + last;
-	document.getElementById("G3H4").style.color = "black";
+	document.getElementById("G3H4").style.color = "white";
     }
 	g3counter++;
 	}
@@ -709,30 +712,40 @@ if (a == newWord[randomNumber] && g3counter ==0) {
 	var d = document.getElementById("G3score").innerHTML = c + 10;
 	g3score = d;
 	g3counter = 5;
+	document.getElementById("scrambled").innerHTML = g3unscrambled;
+	document.getElementById("scrambled").style.color = "green";
 }
 
 else if (a == newWord[randomNumber] && g3counter ==1) {
 	var e = document.getElementById("G3score").innerHTML = c + 7;
 	g3score = e;
 	g3counter = 5;
+	document.getElementById("scrambled").innerHTML = g3unscrambled;
+	document.getElementById("scrambled").style.color = "green";
 }
 
 else if (a == newWord[randomNumber] && g3counter ==2) {
 	var f = document.getElementById("G3score").innerHTML = c + 5;
 	g3score = f;
 	g3counter = 5;
+	document.getElementById("scrambled").innerHTML = g3unscrambled;
+	document.getElementById("scrambled").style.color = "green";
 }
 
 else if (a == newWord[randomNumber] && g3counter ==3) {
 	var g = document.getElementById("G3score").innerHTML = c + 3;
 	g3score = g;
 	g3counter = 5;
+	document.getElementById("scrambled").innerHTML = g3unscrambled;
+	document.getElementById("scrambled").style.color = "green";
 }
 
 else if (a == newWord[randomNumber] && g3counter ==4) {
 	var h = document.getElementById("G3score").innerHTML = c + 1;
 	g3score = h;
 	g3counter = 5;
+	document.getElementById("scrambled").innerHTML = g3unscrambled;
+	document.getElementById("scrambled").style.color = "green";
 }
 	}
 	
@@ -3878,8 +3891,7 @@ $(document).ready(function(){
       		<a onClick="g2pic15();" id="g2lex15" data-role="button" data-theme="d"></a>
     	 </div>   	
    </div>
-  	
-  </div>
+  
   
    <div data-role="footer" class="ui-bar" data-position="fixed">
      <div class="ui-grid-b">
@@ -3935,71 +3947,83 @@ $(document).ready(function(){
 </div>
 
 <div id="page56" data-role="page" data-theme="a">
-<div data-role="header">
-    <h1>Scrambler</h1>
-  </div>
-<div data-role="content">  
-    <div align="center">
-      <table width="166" border="1" cellpadding="0">
-        <tr>
-          <th width="156" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
-        </tr>
-        <tr>
-          <th height="62" bgcolor="#FFFFFF" id="G3score" style="font-size: xx-large; color: #000;" scope="col"></th>
-        </tr>
-      </table>
-    </div>
+	<div data-role="header">
+    	<h1>Scrambler</h1>
+	</div>
+
+	<div data-role="content">  
+    	<div align="center">
+      		<table width="166" border="0" cellpadding="0">
+       	 	<tr>
+          		<th width="156" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
+       		</tr>
+        	<tr>
+          		<th height="62" bgcolor="#FFFFFF" id="G3score" style="font-size: xx-large; color: #000;" scope="col"></th>
+        	</tr>
+      		</table>
+
        
-    <div data-role="controlgroup" data-rel="horizontal">
+    	<div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
     	     <button onClick="scramble();" data-theme="b" data-inline=true>new word</button>
-    	     <table width="250" height="95" border="1" cellpadding="0" data-inline=true>
+    	     <table width="250" height="95" border="0" cellpadding="0" data-inline=true>
     	       <tr>
     	         <th width="250" bgcolor="#FFFFFF" id="scrambled" style="font-size: xx-large; color: #000;" scope="col"></th>
    	           </tr>
-    	       </table>
-  	     </div>
-    </div>
-    <div>
+    	     </table>
+  	       </div>
+    	</div>
     
-      <div align="left" data-role="controlgroup">
-          <div align="left"><input type=button data-theme="b" onClick="G3hint4();"value=Hint&nbsp;4 data-inline=true />
-          <span id="G3H4" date-theme="b" data-inline=true></span><br/>
-          <input type=button data-theme="b" onClick="G3hint3();"value=Hint&nbsp;3 data-inline=true />
-          <span id="G3H3"></span><br/>
-          <input type=button data-theme="b" onClick="G3hint2();"value=Hint&nbsp;2 data-inline=true />
-          <span id="G3H2" date-theme="b" data-inline=true></span><br/>
-          <input type=button data-theme="b" onClick="G3hint1();" value=Hint&nbsp;1 data-inline=true />
-          <span id="G3H1" date-theme="b" data-inline=true border="1"></span><br/>
-          <br/>
-          <input id="game3input" data-type="search"></input>
-          </div>
-          <div>
-            <div align="center">
+	<div data-role="collapsible-set" data-theme="c">
+
+		<div data-role="collapsible">
+  			<h3 onClick="G3hint1();">Hint 1</h3>
+ 			<p id="G3H1"></p>
+
+		</div>
+    
+    	<div data-role="collapsible">
+
+  			<h3 onClick="G3hint2();">Hint 2</h3>
+ 			<p id="G3H2"></p>
+
+		</div>
+    
+    	<div data-role="collapsible">
+
+  			<h3 onClick="G3hint3();">Hint 3</h3>
+ 			<p id="G3H3"></p>
+
+		</div>
+    
+    	<div data-role="collapsible">
+
+  			<h3 onClick="G3hint4();">Hint 4</h3>
+ 			<p id="G3H4"></p>
+
+		</div>
+    
+    </div>
+
+    <div align="center">
               <button onClick="G3scoring()" data-inline=true data-theme="b">Enter Word</button>
-            </div>
-          </div>
-      </div>
     </div>
       
       <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="a">
-	<div class="ui-grid-b">
-    	<div class="ui-block-a">
-        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b" onClick="G3scoring()">Back</a>
-      	  </div>
-    	</div>
-        <div class="ui-block-b">
-        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b" onClick="G3scoring()"></a>
-      	  </div>
-        </div>
-          <div class="ui-grid-c">
-      	  </div>
-        </div>
-	</div>
-  </div>
-</div>
+			<div class="ui-grid-b">
+    			<div class="ui-block-a">
+        			<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b" onClick="G3scoring()">Back</a>
+      	  			</div>
+    			</div>
+        		<div class="ui-block-b">
+        			<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b" onClick="G3scoring()"></a>
+      	 		</div>
+          		<div class="ui-grid-c">
+      	  		</div>
+        	</div>
+	  </div>
 
-  </div>
+</div>
   
 <div data-role="page" id="page57" data-theme="d">
   <div data-role="header">
