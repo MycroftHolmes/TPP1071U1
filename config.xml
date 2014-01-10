@@ -6,10 +6,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>TPP-1071-TP1</name>
+    <name>TPP-1071-U1</name>
 
     <description>
-        Vocab app for TPP1071U1
+        Vocabulary App
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
