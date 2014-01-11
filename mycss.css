@@ -69,5 +69,54 @@
  
  }
 
+.pic {
+    width: 150px;
+    height: auto;
+}
+
+.vowel {
+	color: red;	
+}
+
+body {
+	background-color: #FFF;
+	font-weight: bold;
+	font-size: large;
+	text-align: center;
+	background-image: url();
+}
+
+div.menu {
+	background-color: #FFF;
+	font-weight: bold;
+	font-color: #0069AA;
+	font-size: x-large;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.course {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	color: #006647;
+}
+
+
 
 

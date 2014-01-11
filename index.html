@@ -17,57 +17,6 @@ body,td,th {
 </head> 
 <body> 
 
-<style type="text/css">
-
-.pic {
-    width: 150px;
-    height: auto;
-}
-
-.vowel {
-	color: red;	
-}
-
-body {
-	background-color: #FFF;
-	font-weight: bold;
-	font-size: large;
-	text-align: center;
-	background-image: url();
-}
-
-div.menu {
-	background-color: #FFF;
-	font-weight: bold;
-	font-color: #0069AA;
-	font-size: x-large;
-	text-align: center;
-}
-
-</style>
-
-<style type="text/css">
-a:link {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-a:active {
-	text-decoration: none;
-	color: #FFF;
-}
-.course {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	color: #006647;
-}
-</style>
-
-
 <script>
 	
 	var g3counter = 0;
@@ -854,7 +803,7 @@ function randPic()
 	picnumb = Math.floor((Math.random() * newWord.length));
 	
 	document.getElementById("g5pic").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
-	
+	document.getElementById("imgmatch").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
 	g5fair = 0;
 	
 	g5score = 0;
@@ -900,59 +849,11 @@ function randPic2()
 	
 	g5fair = 0;
 	
-	$("#g5lex0").removeClass("ui-body-e");
-	$("#g5lex1").removeClass("ui-body-e");
-	$("#g5lex2").removeClass("ui-body-e");
-	$("#g5lex3").removeClass("ui-body-e");
-	$("#g5lex4").removeClass("ui-body-e");
-	$("#g5lex5").removeClass("ui-body-e");
-	$("#g5lex6").removeClass("ui-body-e");
-	$("#g5lex7").removeClass("ui-body-e");
-	$("#g5lex8").removeClass("ui-body-e");
-	$("#g5lex9").removeClass("ui-body-e");
-	$("#g5lex10").removeClass("ui-body-e");
-	$("#g5lex11").removeClass("ui-body-e");
-	$("#g5lex12").removeClass("ui-body-e");
-	$("#g5lex13").removeClass("ui-body-e");
-	$("#g5lex14").removeClass("ui-body-e");
-	$("#g5lex15").removeClass("ui-body-e");
-	$("#g5lex16").removeClass("ui-body-e");
-	$("#g5lex17").removeClass("ui-body-e");
-	$("#g5lex18").removeClass("ui-body-e");
-	$("#g5lex19").removeClass("ui-body-e");
-	$("#g5lex20").removeClass("ui-body-e");
-	$("#g5lex21").removeClass("ui-body-e");
-	$("#g5lex22").removeClass("ui-body-e");
-	$("#g5lex23").removeClass("ui-body-e");
-	$("#g5lex24").removeClass("ui-body-e");
-	$("#g5lex25").removeClass("ui-body-e");
+	$(".match").css("background", "#0069AA");
 	
-	$("#g5lex0").removeClass('ui-disabled');
-	$("#g5lex1").removeClass('ui-disabled');
-	$("#g5lex2").removeClass('ui-disabled');
-	$("#g5lex3").removeClass('ui-disabled');
-	$("#g5lex4").removeClass('ui-disabled');
-	$("#g5lex5").removeClass('ui-disabled');
-	$("#g5lex6").removeClass('ui-disabled');
-	$("#g5lex7").removeClass('ui-disabled');
-	$("#g5lex8").removeClass('ui-disabled');
-	$("#g5lex9").removeClass('ui-disabled');
-	$("#g5lex10").removeClass('ui-disabled');
-	$("#g5lex11").removeClass('ui-disabled');
-	$("#g5lex12").removeClass('ui-disabled');
-	$("#g5lex13").removeClass('ui-disabled');
-	$("#g5lex14").removeClass('ui-disabled');
-	$("#g5lex15").removeClass('ui-disabled');
-	$("#g5lex16").removeClass('ui-disabled');
-	$("#g5lex17").removeClass('ui-disabled');
-	$("#g5lex18").removeClass('ui-disabled');
-	$("#g5lex19").removeClass('ui-disabled');
-	$("#g5lex20").removeClass('ui-disabled');
-	$("#g5lex21").removeClass('ui-disabled');
-	$("#g5lex22").removeClass('ui-disabled');
-	$("#g5lex23").removeClass('ui-disabled');
-	$("#g5lex24").removeClass('ui-disabled');
-	$("#g5lex25").removeClass('ui-disabled');
+	$(".match").removeClass('ui-disabled');
+	
+	$(".match").buttonMarkup({ icon: "" });
 	
 
 	}
@@ -967,7 +868,8 @@ function g5lex0()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex0").addClass("ui-body-e");
+		$("#g5lex0").css("background", "#008A5E");
+		$("#g5lex0").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1005,7 +907,8 @@ function g5lex1()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex1").addClass("ui-body-e");
+		$("#g5lex1").css("background", "#008A5E");
+		$("#g5lex1").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1042,7 +945,8 @@ function g5lex2()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex2").addClass("ui-body-e");
+		$("#g5lex2").css("background", "#008A5E");
+		$("#g5lex2").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1079,7 +983,8 @@ function g5lex3()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex3").addClass("ui-body-e");
+		$("#g5lex3").css("background", "#008A5E");
+		$("#g5lex3").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1116,7 +1021,8 @@ function g5lex4()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex4").addClass("ui-body-e");
+		$("#g5lex4").css("background", "#008A5E");
+		$("#g5lex4").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1153,7 +1059,8 @@ function g5lex5()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex5").addClass("ui-body-e");
+		$("#g5lex5").css("background", "#008A5E");
+		$("#g5lex5").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1190,7 +1097,8 @@ function g5lex6()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex6").addClass("ui-body-e");
+		$("#g5lex6").css("background", "#008A5E");
+		$("#g5lex6").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1226,7 +1134,8 @@ function g5lex7()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex7").addClass("ui-body-e");
+		$("#g5lex7").css("background", "#008A5E");
+		$("#g5lex7").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1263,7 +1172,8 @@ function g5lex8()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex8").addClass("ui-body-e");
+		$("#g5lex8").css("background", "#008A5E");
+		$("#g5lex8").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1300,7 +1210,8 @@ function g5lex9()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex9").addClass("ui-body-e");
+		$("#g5lex9").css("background", "#008A5E");
+		$("#g5lex9").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1337,7 +1248,8 @@ function g5lex10()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex10").addClass("ui-body-e");
+		$("#g5lex10").css("background", "#008A5E");
+		$("#g5lex10").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1374,7 +1286,8 @@ function g5lex11()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex11").addClass("ui-body-e");
+		$("#g5lex11").css("background", "#008A5E");
+		$("#g5lex11").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1411,7 +1324,8 @@ function g5lex12()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex12").addClass("ui-body-e");
+		$("#g5lex12").css("background", "#008A5E");
+		$("#g5lex12").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1448,7 +1362,8 @@ function g5lex13()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex13").addClass("ui-body-e");
+		$("#g5lex13").css("background", "#008A5E");
+		$("#g5lex13").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1485,7 +1400,8 @@ function g5lex14()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex14").addClass("ui-body-e");
+		$("#g5lex14").css("background", "#008A5E");
+		$("#g5lex14").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -1522,7 +1438,8 @@ function g5lex15()
 		document.getElementById("g5score").innerHTML = g5score + 5;
 		g5score = g5score + 5;
 		g5fair++;
-		$("#g5lex15").addClass("ui-body-e");
+		$("#g5lex15").css("background", "#008A5E");
+		$("#g5lex15").buttonMarkup({ icon: "check" });
 		
 			if (g5score > g5highscore) {
 			
@@ -4362,56 +4279,57 @@ $(document).on( "pageinit", function() {
    	           </tr>
     	       </table>
   	       </div>
+  	        
     </div>
     
     <div class="ui-grid-a" data-role="controlgroup" align="center">
      	<div class="ui-block-a">
-     		<a href="#" onClick="g5lex0()" id="g5lex0" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex0()" id="g5lex0" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" onClick="g5lex1()" id="g5lex1" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex1()" id="g5lex1" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-       		<a href="#" onClick="g5lex2()" id="g5lex2" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex2()" id="g5lex2" class="match" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-b">
-      		<a href="#" onClick="g5lex3()" id="g5lex3" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex3()" id="g5lex3" class="match" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-a">
-       		<a href="#" onClick="g5lex4()" id="g5lex4" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex4()" id="g5lex4" class="match" data-role="button" data-theme="b"></a>
     	</div>
      	<div class="ui-block-b">
-       		<a href="#" onClick="g5lex5()" id="g5lex5" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex5()" id="g5lex5" class="match" data-role="button" data-theme="b"></a>
      	</div>	
      	<div class="ui-block-a">
-     		<a href="#" onClick="g5lex6()" id="g5lex6" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex6()" id="g5lex6" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" onClick="g5lex7()" id="g5lex7" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex7()" id="g5lex7" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-       		<a href="#" onClick="g5lex8()" id="g5lex8" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex8()" id="g5lex8" class="match" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-b">
-      		<a href="#" onClick="g5lex9()" id="g5lex9" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex9()" id="g5lex9" class="match" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-a">
-       		<a href="#" onClick="g5lex10()" id="g5lex10" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex10()" id="g5lex10" class="match" data-role="button" data-theme="b"></a>
     	</div>
      	<div class="ui-block-b">
-       		<a href="#" onClick="g5lex11()" id="g5lex11" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex11()" id="g5lex11" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-     		<a href="#" onClick="g5lex12()" id="g5lex12" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex12()" id="g5lex12" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" onClick="g5lex13()" id="g5lex13" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex13()" id="g5lex13" class="match" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-       		<a href="#" onClick="g5lex14()" id="g5lex14" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex14()" id="g5lex14" class="match" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-b">
-      		<a href="#" onClick="g5lex15()" id="g5lex15" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex15()" id="g5lex15" class="match" data-role="button" data-theme="b"></a>
     	 </div>    	
    </div>
     	
