@@ -840,8 +840,9 @@ function randPic2()
 
 	picnumb = Math.floor((Math.random() * newWord.length));
 	
-	document.getElementById("g5pic").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
-	
+	//document.getElementById("g5pic").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
+	document.getElementById("imagematch1").src = picnumb + '.jpg';
+	document.getElementById("imagematch2").src = picnumb + '.jpg';
 	g5fair = 0;
 	
 	$(".match").css("background", "#0069AA");
@@ -849,7 +850,6 @@ function randPic2()
 	$(".match").removeClass('ui-disabled');
 	
 	$(".match").buttonMarkup({ icon: "" });
-	
 
 	}
 	
@@ -4268,12 +4268,13 @@ $(document).on( "pageinit", function() {
     <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
     	     <button onClick="randPic2()" data-theme="b" data-inline=true>new picture</button>
-    	     <table width="225" height="65" border="0" cellpadding="0" data-inline=true>
-    	       <tr>
-    	         <th width="225" bgcolor="#FFFFFF" id="g5pic" style="font-size: xx-large; color: #000;" scope="col"></th>
-   	           </tr>
-    	       </table>
-  	       </div>
+    	     <br/>	     
+  			 <a href="#matchpop" data-rel="popup"><img id="imagematch1" src="2.jpg" alt="pic2" class="pic"/></a>
+      			<div data-role="popup" class="photopop" id="matchpop">
+      		<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+      		<img id="imagematch2" src="3.jpg" alt="pic1"/>
+      		</div>       
+      </div>
   	        
     </div>
     
